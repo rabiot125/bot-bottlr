@@ -24,7 +24,7 @@ function App() {
   const enlistBot = (bot) => {
     if (!army.some(b => b.id === bot.id)) {
       setArmy([...army, bot]);
-      setBots(bots.filter(b => b.id !== bot.id));
+     // setBots(bots.filter(b => b.id !== bot.id)); // Remove the bot from the list of available bots
     }
   };
 
@@ -55,7 +55,7 @@ function App() {
 
   return (
     <Router>
-      <h1>Welcome to Bot Battlr, the one and only spot in the known universe where you can custom build your own Bot Army!</h1>
+      <h1>Welcome to <b>Bot Battlr</b>, the one and only spot in the known universe where you can custom build your own Bot Army!</h1>
       <div className="App">
       <nav>
           <NavLink to="/" className="nav-link"  >
