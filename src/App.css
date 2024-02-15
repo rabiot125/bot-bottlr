@@ -1,38 +1,174 @@
-.App {
+/* Responsive grid layout for the entire app */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+ 
+/* Styles for BotCollection component */
+.bot-collection {
+  margin-top: 20px;
+}
+ 
+.botCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 15px;
+  background-color: rgba(195, 192, 196, 0);
+}
+ 
+/* Pagination styles */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+ 
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+}
+ 
+.pagination button.active {
+  background-color: #fff;
+  color: #007bff;
+}
+ 
+/* Styles for YourBotArmy component */
+.your-bot-army {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+ 
+.bot-army-card {
+  width: 50px;
+  margin: 15px;
+}
+ 
+.bot-army-card img {
+  width: 300%;
+  border-radius: 8px;
+}
+ 
+ 
+/* Styles for BotCollection component */
+.bot-collection {
+  margin-top: 20px;
+}
+ 
+.allBots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+ 
+.botCard {
+  flex: 0 0 calc(20% - 30px); 
+  box-sizing: border-box;
+  border: 1px solid #685252;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 0;
+}
+ 
+.botCard img {
+  width: 100%;
+  border-radius: 8px;
+}
+ 
+/* Pagination styles */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+ 
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #e8eef5;
+  color: #fff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+}
+ 
+.pagination button.active {
+  background-color: #fff;
+  color: #007bff;
+}
+ 
+ 
+/* Styles for SortBar component */
+.sort-bar {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #bdafb2;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+ 
+.sort-options {
+  display: flex;
+  align-items: left;
+}
+ 
+.sort-options label {
+  margin-right: 5px;
+  font-weight: bold;
+}
+ 
+.sort-buttons {
+  display: flex;
+}
+ 
+.sort-buttons button {
+  background-color: #f33d3dcb;
+  color: #fff;
+  border: solid;
+  border-radius: 10px;
+  padding: 8px 15px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: bold;
+}
+ 
+.sort-buttons button:last-child {
+  margin-right: 10px;
+}
+ 
+ 
+/* Add styling for the navbar */
+nav {
+  background-color: #333;
+  padding: 10px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ 
+/* Style the nav links */
+.nav-link {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ 
+/* Active link styling */
+.nav-link.active {
+  border-bottom: 2px solid #fff;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ 
+/* container spacing */
+.container {
+  margin-top: 20px;
 }
