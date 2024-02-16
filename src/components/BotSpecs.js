@@ -1,4 +1,3 @@
-// // BotSpecs.js
 
  import React from 'react';
  
