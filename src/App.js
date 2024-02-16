@@ -24,6 +24,7 @@ function App() {
   const enlistBot = (bot) => {
     if (!army.some(b => b.id === bot.id)) {
       setArmy([...army, bot]);
+      // Remove the bot from the list of available bots
      // setBots(bots.filter(b => b.id !== bot.id)); // Remove the bot from the list of available bots
     }
   };

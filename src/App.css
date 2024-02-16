@@ -180,6 +180,8 @@ nav {
   border-radius: 4px;
   cursor: pointer;
   padding: 8px 16px;
+  display: flex;
+ 
 }
 
 .red-button:hover {
